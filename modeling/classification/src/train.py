@@ -29,7 +29,7 @@ def run(fold, model):
     print(f'Fold={fold}, Accuracy={accuracy}')
 
     joblib.dump(clf,
-                pathlib.Path(f'{config.MODEL_OUTPUT}dt_{fold}.bin'))
+                pathlib.Path(f'{config.MODEL_OUTPUT}{model}_{fold}.bin'))
 
 
 if __name__ == '__main__':
